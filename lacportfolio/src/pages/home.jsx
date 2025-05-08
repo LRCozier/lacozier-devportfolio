@@ -5,8 +5,8 @@ const Homepage = () => {
   return(
     <>
     <section className="portfolio-page" id="portfolio-page-home">
-      <h1>Luke Rudderham-Cozier</h1>
-      <h2>Front End Engineer</h2>
+      <h1 className="portfolio-heading">Luke Rudderham-Cozier</h1>
+      <h2 className="portfolio-subheading">Front End Engineer</h2>
     </section>
     </>
   )
