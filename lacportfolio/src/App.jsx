@@ -1,9 +1,11 @@
 import './App.css'
+import Homepage from './pages/home'
 
 const App = () => {
 
   return (
     <>
+    <Homepage/>
     </>
   )
 }
