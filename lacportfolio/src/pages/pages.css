@@ -31,6 +31,7 @@
 .tech-stack svg {
   transition: color 0.3s ease-in-out;
   margin: 0 15px;
+  height: 2rem;
 }
 
 .tech-stack svg:hover {
