@@ -24,11 +24,11 @@
   gap: 1.5rem;
   justify-content: center;
   margin-top: 2rem;
-  font-size: 200%;
+  font-size: 30px;
 }
 
-.tech-icon {
-  font-size: 200%;
+svg.tech-icon-html {
+  font-size: 30px;
   color: var(--text-primary);
   transition: color 0.3s ease-in-out;
   margin: 0 15px;
