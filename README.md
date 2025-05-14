@@ -1,2 +1,2 @@
 # lacozier-devportfolio
-A front end developer portfolio built using Next.js
+A front end developer portfolio built using React.js
