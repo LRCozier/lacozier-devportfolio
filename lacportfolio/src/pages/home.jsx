@@ -1,4 +1,6 @@
 import React from "react";
+import '../pages/pages.css';
+import profilepic from '../assets/cartoonprofilepic.jpg';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
@@ -10,13 +12,13 @@ import { FaVuejs } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaPhp } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
-import '../pages/pages.css';
 
 const Homepage = () => {
   return (
     <>
       <section className="portfolio-page" id="portfolio-page-home">
         <h1 className="portfolio-heading">Luke Rudderham-Cozier</h1>
+        <img src={profilepic} className="portfolio-profile-picture" alt="profile picutre" />
         <h2 className="portfolio-subheading">Front End Engineer</h2>
         <h3 className="portfolio-subheading">Portfolio Under Construction</h3>
         <div className="tech-stack">
