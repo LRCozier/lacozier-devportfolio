@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -13,11 +14,11 @@ const Navbar = () => {
         </div>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
         <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <Link to='/'>Home</Link>
+          <Link to='/About'>About</Link>
+          <Link to='/Projects'>Projects</Link>
+          <Link to='/Blog'>Blog</Link>
+          <Link to='/Contact'>Contact</Link>
         </ul>
       </nav>
     </header>
