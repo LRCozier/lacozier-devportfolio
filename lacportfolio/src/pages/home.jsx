@@ -10,6 +10,7 @@ import { FaVuejs } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaPhp } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
+import '../pages/pages.css';
 
 const Homepage = () => {
   return (
