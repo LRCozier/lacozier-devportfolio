@@ -1,7 +1,5 @@
 /*START - HEADER AND NAVIGATION - USED PREVIOUSLY IN https://github.com/LRCozier/yogiclairesite/blob/main/yoga/src/Components/Navbar/Navbar.css*/ 
 header {
-  background-color: rgba(42, 157, 143, .15);  
-  backdrop-filter: blur(5px);
   position: sticky;
   top: 0;
 }
@@ -9,7 +7,6 @@ header {
 #logo a {
   text-decoration: none;
   font-size: 1rem;
-  color: var(--text-color);
   font-family: "Numans", serif;
 }
 
@@ -29,15 +26,14 @@ header {
   padding: 0;
 }
 
-.nav-links link {
+.nav-links a {
   text-decoration: none;
   color: var(--text-color);
   font-size: 1rem;
   
 }
 
-.nav-links link:hover {
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 3px 6px 0 rgba(0,0,0,0.56);
+.nav-links a:hover {
   outline: none;
   text-decoration: none;
 }
@@ -63,9 +59,7 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1rem 0;   
-    background-color: rgb(42, 157, 143);  
-    backdrop-filter: blur(5px);
+    padding: 1rem 0;    
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
@@ -79,7 +73,7 @@ header {
     transform: translateY(0)
   }
 
-  .nav-links link {
+  .nav-links a {
     text-align: center;
     margin: 0.5rem 0;
   }
