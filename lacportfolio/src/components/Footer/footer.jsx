@@ -1,5 +1,4 @@
 import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Footer = () => {
@@ -7,8 +6,6 @@ const Footer = () => {
     <footer>
       <p>&copy; 2025 Luke Rudderham-Cozier. All rights reserved.</p>
       <div className='footer-socials'>
-        <FontAwesomeIcon icon={faGithub} />
-        <FontAwesomeIcon icon={Linkedin} />
       </div>
     </footer>
   );
