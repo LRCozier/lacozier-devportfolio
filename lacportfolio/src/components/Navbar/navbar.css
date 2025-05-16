@@ -1,7 +1,8 @@
 /*START - HEADER AND NAVIGATION - USED PREVIOUSLY IN https://github.com/LRCozier/yogiclairesite/blob/main/yoga/src/Components/Navbar/Navbar.css*/ 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  margin-top: 2rem;
 }
 
 #logo a {
@@ -15,7 +16,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: relative;
+  position: fixed;
 }
 
 .nav-links {
