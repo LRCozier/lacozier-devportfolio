@@ -1,0 +1,88 @@
+/*START - HEADER AND NAVIGATION - USED PREVIOUSLY IN https://github.com/LRCozier/yogiclairesite/blob/main/yoga/src/Components/Navbar/Navbar.css*/ 
+header {
+  background-color: rgba(42, 157, 143, .15);  
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+}
+
+#logo a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: "Numans", serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  
+}
+
+.nav-links link:hover {
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16), 0 3px 6px 0 rgba(0,0,0,0.56);
+  outline: none;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    z-index: 1000;
+    position: relative;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;   
+    background-color: rgb(42, 157, 143);  
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0)
+  }
+
+  .nav-links link {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+/*END- HEADER AND NAVIGATION*/
