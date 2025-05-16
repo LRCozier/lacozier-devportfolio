@@ -10,7 +10,7 @@ import Contact from './pages/contact';
 const App = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/lacozier-devportfolio">
     <Navbar />
     <Routes>
       <Route path="/" element={<Homepage />} />
