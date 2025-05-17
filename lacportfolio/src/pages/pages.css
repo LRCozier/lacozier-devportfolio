@@ -1,6 +1,18 @@
+:root {
+  --accent-color: #4a90e2;
+  --text-primary: #333;
+  --text-secondary: #777;
+  --background-color: #fff;
+  --section-padding: 2rem;
+  --max-content-width: 1200px;
+}
+
 .portfolio-page {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--section-padding);
   text-align: center;
-  padding: 2rem;
+  background-color: var(--background-color);
 }
 
 .portfolio-heading {
@@ -16,43 +28,43 @@
   margin-bottom: 1rem;
 }
 
-.portfolio-profile-picture{
-  height: 30%;
+.portfolio-profile-picture {
   width: 30%;
+  max-width: 200px;
   border-radius: 55%;
+  margin: 1rem auto;
+  display: block;
 }
 
-/*START - HOMEPAGE STYLES*/
-
-/*START - TECH STACK ICONS*/
 .tech-stack {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem;
   margin-top: 2rem;
-  font-size: 30px;
 }
 
-svg.tech-icon-html {
-  font-size: 30px;
-  color: var(--text-primary);
-  transition: color 0.3s ease-in-out;
-  margin: 0 15px;
+.tech-icon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--text-secondary);
 }
 
 .tech-icon:hover {
+  transform: scale(1.2);
   color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .tech-stack {
-    display: flex;
-    font-size: 2rem;
-    gap: 6px;
-    justify-content: space-around;
-}
-}
+@media (min-width: 768px) {
+  .portfolio-heading {
+    font-size: 3rem;
+  }
 
-/*END - TECH STACK ICONS*/
+  .portfolio-subheading {
+    font-size: 1.5rem;
+  }
 
-/*START - HOMEPAGE STYLES*/
+  .portfolio-profile-picture {
+    width: 20%;
+  }
+}
