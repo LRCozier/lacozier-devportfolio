@@ -1,4 +1,8 @@
 /*START - FOOTER*/
+:root {
+  --text-secondary: #b3b3b3;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -21,7 +25,7 @@ footer .footer-socials {
 }
 
 footer .footer-socials a {
-  color: #fff;
+  color: var(--text-secondary);
   font-size: 1.25rem;
   text-decoration: none;
   transition: color 0.3s ease;
