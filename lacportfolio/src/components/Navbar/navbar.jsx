@@ -9,7 +9,7 @@ const Navbar = () => {
   return(
     <>
     <header>
-      <nav>
+      <nav className="navbar">
         <div className="portfolio-logo">
 
         </div>
