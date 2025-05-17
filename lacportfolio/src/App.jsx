@@ -11,15 +11,15 @@ const App = () => {
 
   return (
     <BrowserRouter basename="/lacozier-devportfolio">
+     <Navbar />
       <main>
-       <Navbar />
        <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
-    </main>
+     </main>
+     <Footer />
   </BrowserRouter>
   );
 }
