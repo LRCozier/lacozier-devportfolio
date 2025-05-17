@@ -44,6 +44,15 @@ svg.tech-icon-html {
   color: var(--accent-color);
 }
 
+@media (max-width: 768px) {
+  .tech-stack {
+    display: flex;
+    font-size: 2rem;
+    gap: 6px;
+    justify-content: space-around;
+}
+}
+
 /*END - TECH STACK ICONS*/
 
 /*START - HOMEPAGE STYLES*/

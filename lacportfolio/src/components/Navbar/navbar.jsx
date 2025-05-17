@@ -15,11 +15,11 @@ const Navbar = () => {
         </div>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
         <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-          <Link to='/'>Home</Link>
-          <Link to='/About'>About</Link>
-          <Link to='/Projects'>Projects</Link>
-          <Link to='/Blog'>Blog</Link>
-          <Link to='/Contact'>Contact</Link>
+          <li><Link to='/' onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link to='/About' onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to='/Projects' onClick={() => setMenuOpen(false)}>Projects</Link></li>
+          <li><Link to='/Blog' onClick={() => setMenuOpen(false)}>Blog</Link></li>
+          <li><Link to='/Contact' onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       </nav>
     </header>
