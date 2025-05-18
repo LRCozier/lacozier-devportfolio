@@ -9,7 +9,6 @@ const Homepage = () => {
         <h1 className="portfolio-heading">Luke Rudderham-Cozier</h1>
         <img src={profilepic} className="portfolio-profile-picture" alt="profile picutre" />
         <h2 className="portfolio-subheading">Front End Engineer</h2>
-        <h3 className="portfolio-subheading">Portfolio Under Construction</h3>
       </section>
     </>
   );
