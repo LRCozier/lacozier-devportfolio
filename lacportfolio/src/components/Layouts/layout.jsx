@@ -4,7 +4,7 @@ import '.../App.css';
 const Layout = ({children}) => {
 
   return(
-    <main className="page">
+    <main className="portfolio-page">
       {children}
     </main>
   )
