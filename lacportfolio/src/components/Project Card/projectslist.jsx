@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { GraphQLClient, gql } from "graphql-request";
 import ProjectCard from './projectcard';
 
-const endpoint = 'https://api-eu-west-2.hygraph.com/v2/your-project-id/master';
+const endpoint = 'https://eu-west-2.cdn.hygraph.com/content/cmao5enez00et07wfwhggtd0z/master';
 const graphQLClient = new GraphQLClient(endpoint);
 
 const query = gql`
@@ -11,8 +11,8 @@ const query = gql`
       title
       description
       githubUrl
-      liveUrl
-      techStack
+      livedemoUrl
+      techstack
       thumbnail {
         url
       }
