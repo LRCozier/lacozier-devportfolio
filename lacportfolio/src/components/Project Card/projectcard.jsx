@@ -1,11 +1,11 @@
 import React from "react";
 import './projectcard.css';
 
-const ProjectCard = ({ title, description, githubUrl, livedemoUrl, techstack, thumbnail}) => {
+const ProjectCard = ({ title, description, githubUrl, livedemoUrl, techstack}) => {
 
   return(
     <div className="project-card">
-      <img src={thumbnail.url} alt={title} className="project-image" />
+      <img src="" alt={title} className="project-image" />
 
       <div className="project-content">
         <h3 className="project-title">{title}</h3>
