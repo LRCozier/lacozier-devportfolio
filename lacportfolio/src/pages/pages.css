@@ -27,6 +27,14 @@
   margin-bottom: 1rem;
 }
 
+.portfolio-text{
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1.5rem auto;
+    max-width: 700px;
+}
+
 .portfolio-profile-picture {
   width: 30%;
   max-width: 200px;
