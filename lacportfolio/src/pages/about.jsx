@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "../components/Layout";
-import Section from "../components/Section";
+import Layout from "../components/Layouts/layout";
+import Section from "../components/Layouts/section";
 import profilepic from "../assets/cartoonprofilepic.jpg";
 import "../pages/pages.css";
 import {
