@@ -1,16 +1,23 @@
 import React from "react";
-import '../pages/pages.css';
-import profilepic from '../assets/cartoonprofilepic.jpg';
+import Layout from "../components/Layout";
+import Section from "../components/Section";
+import profilepic from "../assets/cartoonprofilepic.jpg";
+import "../pages/pages.css";
 
 const Homepage = () => {
   return (
-    <>
-      <section className="portfolio-page" id="portfolio-page-home">
-        <h1 className="portfolio-heading">Luke Rudderham-Cozier</h1>
-        <img src={profilepic} className="portfolio-profile-picture" alt="profile picutre" />
-        <h2 className="portfolio-subheading">Front End Engineer</h2>
-      </section>
-    </>
+    <Layout>
+      <Section
+        title="Luke Rudderham-Cozier"
+        subtitle="Front End Engineer"
+      >
+        <img
+          src={profilepic}
+          className="profile-picture"
+          alt="profile picture"
+        />
+      </Section>
+    </Layout>
   );
 };
 
