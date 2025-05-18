@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
 import './pages.css';
+import Layout from "../components/Layouts/layout";
+import Section from "../components/Layouts/section";
 
 const NotFound = () => {
 
