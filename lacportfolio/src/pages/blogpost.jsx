@@ -4,10 +4,11 @@ import './pages.css';
 const BlogPost = () => {
 
   return(
-    <>
-    <div className="blog-post">
-    </div>
-    </>
+    <Layout>
+      <Section title="Blog Post">
+
+      </Section>
+    </Layout>
   )
 }
 
