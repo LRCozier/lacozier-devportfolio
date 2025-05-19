@@ -18,7 +18,6 @@ const Navbar = () => {
           <li><Link to='/' onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to='/About' onClick={() => setMenuOpen(false)}>About</Link></li>
           <li><Link to='/Projects' onClick={() => setMenuOpen(false)}>Projects</Link></li>
-          <li><Link to='/Blog' onClick={() => setMenuOpen(false)}>Blog</Link></li>
           <li><Link to='/Contact' onClick={() => setMenuOpen(false)}>Contact</Link></li>
         </ul>
       </nav>
