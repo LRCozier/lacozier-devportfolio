@@ -18,19 +18,19 @@ const query = gql`
 `;
 
 const ProjectList = () => {
-  const [projects, setProjects] = useState([]);
+  const [project, setProject] = useState([]);
 
   useEffect(() => {
     const fetchProjects = async () => {
       const data = await graphQLClient.request(query);
-      setProjects(data.projects);
+      setProject(data.project);
     };
     fetchProjects();
   }, []);
 
   return (
     <div className="project-list">
-      {projects.map((proj, index) => (
+      {project.map((proj, index) => (
         <ProjectCard key={index} {...proj} />
       ))}
     </div>
