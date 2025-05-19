@@ -7,15 +7,12 @@ const graphQLClient = new GraphQLClient(endpoint);
 
 const query = gql`
   {
-    projects {
+    project {
       title
       description
       githubUrl
       livedemoUrl
       techstack
-      thumbnail {
-        url
-      }
     }
   }
 `;
