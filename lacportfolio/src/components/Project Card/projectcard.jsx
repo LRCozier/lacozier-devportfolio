@@ -1,5 +1,4 @@
 import React from "react";
-import './projectslist';
 import './projectcard.css';
 
 const ProjectCard = ({ title, description, githubUrl, livedemoUrl, techstack}) => {
