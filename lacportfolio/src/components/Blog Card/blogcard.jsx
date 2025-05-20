@@ -3,6 +3,8 @@ import './blogcard.css';
 
 const BlogCard = () => {
 
+  //NOTE TO SELF: SET UP CONTENT ON HYGRAPH AND IMPORT API QUERY
+
   return(
     <div className="blog-card">
       <img src="" alt="Blog cover" className="blog-image" />
