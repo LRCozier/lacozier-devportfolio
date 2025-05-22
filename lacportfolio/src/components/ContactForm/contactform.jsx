@@ -1,4 +1,3 @@
-/*CONTACT FORM COMPONENT USED PREVIOUSLY IN https://github.com/LRCozier/yogiclairesite/blob/main/yoga/src/Components/Contactform/Contactform.jsx*/
 import { useState } from "react";
 import './Contactform.css'
 
