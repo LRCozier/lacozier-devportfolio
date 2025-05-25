@@ -10,6 +10,7 @@
 html{
   overflow-y: scroll;
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +26,12 @@ body {
   box-sizing: border-box;
 }
 
+@supports (height: 100dvh) {
+  body {
+    min-height: 100dvh;
+  }
+}
+
 *::before, *::after {
   box-sizing: inherit;
 }
@@ -33,12 +40,12 @@ body {
   margin-top: 20px;
   padding: 2rem 1rem;
   min-height: calc(100vh - 160px);
+  flex: 1;
 }
 
 @media (max-width: 768px) {
 
   main{
     width: 90dvw;
-    height: 100vh;
   }
 }

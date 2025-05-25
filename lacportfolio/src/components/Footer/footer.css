@@ -4,7 +4,6 @@
 }
 
 footer {
-  position: fixed;
   text-align: center;
   padding: 1.5rem 0;
   display: flex;
@@ -12,8 +11,7 @@ footer {
   align-items: center;
   gap: 1rem;
   width: 100%;
-  left: 0;
-  bottom: 0;
+  background-color: var(--background);
 }
 
 
