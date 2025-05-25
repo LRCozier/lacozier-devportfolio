@@ -1,13 +1,13 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  justify-content: space-between;
+  background: var(--background-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  max-width: 400px;
-  margin: 1rem auto;
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .project-card:hover {
@@ -27,12 +27,12 @@
 .project-title {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .project-description {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .tech-stack li {
-  background: #f0f0f0;
+  background: var(--accent-color);
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
 }
