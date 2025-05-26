@@ -10,9 +10,6 @@ const Navbar = () => {
     <>
     <header>
       <nav className="navbar">
-        <div className="portfolio-logo">
-
-        </div>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>☰</button>
         <ul className={menuOpen ? "nav-links open" : "nav-links"}>
           <li><Link to='/' onClick={() => setMenuOpen(false)}>Home</Link></li>
