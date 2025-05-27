@@ -16,6 +16,7 @@ const App = () => {
     <BrowserRouter basename="/lacozier-devportfolio">
     <TopScroll/>
      <Navbar />
+     <div className='app-content-wrapper'>
       <main className='main-content'>
        <Routes>
         <Route path="/" element={<Homepage />} />
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
      </main>
+     </div>
      <Footer />
   </BrowserRouter>
   );
