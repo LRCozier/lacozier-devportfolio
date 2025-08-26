@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layouts/layout";
 import Section from "../components/Layouts/section";
-import profilepic from "../assets/cartoonprofilepic.jpg";
+import profilepic from "../assets/2025profilepic.jpeg";
 import "../pages/pages.css";
 import {
   FaHtml5,
@@ -34,7 +34,7 @@ const About = () => {
           emphasizing the imperative of seamless user experiences in every application interaction.
         </p>
 
-        <h2 className="portfolio-subheading">Languages I speak</h2>
+        <h2 className="portfolio-subheading">Tech Stack</h2>
         <div className="tech-stack">
           <FaHtml5 className="tech-icon" alt="HTML5 Icon" />
           <FaCss3Alt className="tech-icon" alt="CSS3 Icon" />
