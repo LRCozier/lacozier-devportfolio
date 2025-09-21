@@ -4,7 +4,7 @@ import ProjectCard from './projectcard';
 
 const GET_PROJECTS = gql`
   query GetProjects {
-    projects {
+    project {
       id
       title
       description
