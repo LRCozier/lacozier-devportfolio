@@ -8,7 +8,7 @@ const Projects = () => {
       <h1 className="section-heading">My Work</h1>
       <p className="section-subheading">
         A selection of projects that showcase my skills and passion for
-        creating meaningful digital experiences. Data is fetched live from a GraphQL API.
+        creating meaningful digital experiences.
       </p>
       <ProjectList />
     </section>
