@@ -13,11 +13,11 @@ const Contact = () => {
           to reach out through your preferred channel.
         </p>
         <div className="contact-links">
-          <a href="mailto:lauren@example.com" className="contact-link-card">
+          <a href="mailto:lrcozier@gmail.com" className="contact-link-card">
             <FaEnvelope />
             <span>Email</span>
           </a>
-          <a href="https://linkedin.com/in/laurencozier" target="_blank" rel="noopener noreferrer" className="contact-link-card">
+          <a href="https://www.linkedin.com/in/luke-rudderham-cozier-30205343/" target="_blank" rel="noopener noreferrer" className="contact-link-card">
             <FaLinkedin />
             <span>LinkedIn</span>
           </a>

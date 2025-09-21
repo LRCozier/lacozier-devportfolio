@@ -9,11 +9,12 @@ import Projects from './pages/projects';
 import Contact from './pages/contact';
 import TopScroll from './components/Layouts/topscroll';
 
+const client = new ApolloClient({
+  uri: import.meta.env.VITE_HYGRAPH_ENDPOINT,
+  cache: new InMemoryCache(),
+});
+
 const App = () => {
-  const client = new ApolloClient({
-    uri: process.env.REACT_APP_HYGRAPH_ENDPOINT,
-    cache: new InMemoryCache(),
-  });
 
   return (
   <ApolloProvider client={client}>
