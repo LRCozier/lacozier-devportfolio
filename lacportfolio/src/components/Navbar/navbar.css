@@ -2,7 +2,7 @@
   --text-color: #333;
   --primary-background: #f8f8f8;
   --active-color: #BEBEBE;
-  --navbar-height: 1rem;
+  --navbar-height: 2rem;
 }
 
 .header {
@@ -11,14 +11,12 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: var(--navbar-height, 80px);
   display: flex;
   align-items: center;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header.scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
