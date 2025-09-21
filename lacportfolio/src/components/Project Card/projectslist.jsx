@@ -19,18 +19,19 @@ const ProjectList = () => {
   const { loading, error, data } = useQuery(GET_PROJECTS);
 
   if (loading) return <p className="loading-message">Loading projects...</p>;
-  if (error) return <p className="error-message">Error: Could not load projects.</p>;
+  if (error) return <p className="error-message">Error: {error.message}</p>;
+  if (!data || !data.project) return <p>Could not find any projects.</p>;
 
   return (
     <div className="projects-grid">
-      {data.projects.map((project) => (
+      {data.project.map((proj) => (
         <ProjectCard
-          key={project.id}
-          title={project.title}
-          description={project.description}
-          techstack={project.techstack}
-          liveUrl={project.livedemoUrl}
-          githubUrl={project.githubUrl}
+          key={proj.id}
+          title={proj.title}
+          description={proj.description}
+          techstack={(proj.techstack || '').split(',').map(tech => tech.trim())}
+          liveUrl={proj.livedemoUrl}
+          githubUrl={proj.githubUrl}
         />
       ))}
     </div>

@@ -5,9 +5,6 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const ProjectCard = ({ title, description, liveUrl, githubUrl, techstack }) => {
   return (
     <div className="project-card">
-      <div className="project-image-container">
-        <div className="project-placeholder">{title}</div>
-      </div>
       <div className="project-card-content">
         <div className="project-card-header">
             <h3>{title}</h3>
@@ -26,7 +23,7 @@ const ProjectCard = ({ title, description, liveUrl, githubUrl, techstack }) => {
         </div>
         <p>{description}</p>
         <div className="project-techstack">
-          {techstack?.map((tech, i) => (
+          {techstack.map((tech, i) => (
             <span key={i} className="techstack">{tech}</span>
           ))}
         </div>
