@@ -210,6 +210,14 @@ section {
     font-weight: 500;
 }
 
+a.contact-link-card {
+  color: white;
+}
+
+a.contact-link-card:hover {
+  color: blue;
+}
+
 .contact-link-card:hover {
     border-color: var(--text-primary);
     color: var(--text-primary);
