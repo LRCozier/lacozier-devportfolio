@@ -1,6 +1,7 @@
 :root {
   --text-color: #333;
   --primary-background: #f8f8f8;
+  --active-color: #BEBEBE;
   --navbar-height: 1rem;
 }
 
@@ -18,8 +19,8 @@
   align-items: center;
   padding: 1rem 2rem;
   position: relative;
-  justify-content: flex-end;
   height: var(--navbar-height);
+  justify-content: space-between; 
 }
 
 .nav-links {
@@ -49,7 +50,7 @@
 }
 
 .nav-links a.active {
-  color: var(--text-primary);
+  color: var(--active-color);
   font-weight: 700;
 }
 

@@ -171,13 +171,13 @@ section {
     margin-bottom: 1rem;
 }
 
-.project-tags {
+.project-techstack {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.tag {
+.techstack {
     background-color: var(--background-secondary);
     color: var(--text-secondary);
     padding: 0.25rem 0.75rem;

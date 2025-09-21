@@ -17,7 +17,7 @@ const About = () => {
           <div className="service-card">
             <FaCode className="service-icon" />
             <h3>Frontend Development</h3>
-            <p>React, Vue.js, TypeScript, and CSS to build responsive interfaces.</p>
+            <p>React, Vue.js, Next.js, TypeScript, and CSS to build responsive interfaces.</p>
           </div>
           <div className="service-card">
             <FaServer className="service-icon" />

@@ -34,6 +34,15 @@ body {
   box-sizing: inherit;
 }
 
+.container {
+  max-width: var(--max-content-width, 1120px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+}
+
 .app-content-wrapper {
   max-width: var(--max-content-width, 1200px);
   margin: 0 auto;
@@ -48,6 +57,35 @@ body {
   padding-bottom: 2rem;
   flex: 1;
   display: block;
+}
+
+/* App.css */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  background-color: var(--black-color);
+  color: var(--background-light);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
 }
 
 @media (max-width: 768px) {

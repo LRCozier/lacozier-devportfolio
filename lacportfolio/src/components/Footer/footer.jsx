@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-content container">
         <div className="footer-info">
             <span className="footer-name">Luke Cozier</span>
-            <p>&copy; 2025 Luke Cozier. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Luke Cozier. All rights reserved.</p>
         </div>
         <div className='footer-socials'>
             <a href='https://github.com/lrcozier' target='_blank' rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
