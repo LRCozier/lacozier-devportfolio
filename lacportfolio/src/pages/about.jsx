@@ -1,55 +1,37 @@
+// pages/About.jsx
 import React from "react";
-import Layout from "../components/Layouts/layout";
-import Section from "../components/Layouts/section";
-import profilepic from "../assets/2025profilepic.jpeg";
-import "../pages/pages.css";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaGitAlt,
-  FaNodeJs,
-  FaReact,
-  FaVuejs,
-  FaPhp,
-} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
-import { TbFileTypeSql } from "react-icons/tb";
+import "./pages.css";
+import { FaCode, FaServer, FaMobileAlt } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <Layout>
-      <Section title="About Me">
-        <img
-          src={profilepic}
-          className="profile-picture"
-          alt="profile picture"
-        />
-        <p className="portfolio-text">
-          My professional odyssey commenced amidst the constraints of a pandemic-induced lockdown,
-          during which I enrolled in Harvard's esteemed "CS50: Introduction to Computer Science"
-          course. This experience ignited my passion for coding, illuminating a clear path for my
-          career aspirations. I firmly advocate for a user-centric approach in software development,
-          emphasizing the imperative of seamless user experiences in every application interaction.
+    <section id="about" className="about-section page-section">
+      <div className="container">
+        <h1 className="section-heading">About Me</h1>
+        <p className="section-subheading">
+          I'm a passionate full-stack developer with expertise in modern web
+          technologies. I love creating seamless user experiences and robust
+          backend solutions.
         </p>
-
-        <h2 className="portfolio-subheading">Tech Stack</h2>
-        <div className="tech-stack">
-          <FaHtml5 className="tech-icon" alt="HTML5 Icon" />
-          <FaCss3Alt className="tech-icon" alt="CSS3 Icon" />
-          <IoLogoJavascript className="tech-icon" alt="JavaScript Icon" />
-          <SiTypescript className="tech-icon" alt="TypeScript Icon" />
-          <FaGitAlt className="tech-icon" alt="Git Icon" />
-          <FaNodeJs className="tech-icon" alt="Node.js Icon" />
-          <FaReact className="tech-icon" alt="React Icon" />
-          <FaVuejs className="tech-icon" alt="Vue.js Icon" />
-          <RiNextjsFill className="tech-icon" alt="Next.js Icon" />
-          <FaPhp className="tech-icon" alt="PHP Icon" />
-          <TbFileTypeSql className="tech-icon" alt="SQL Icon" />
+        <div className="services-grid">
+          <div className="service-card">
+            <FaCode className="service-icon" />
+            <h3>Frontend Development</h3>
+            <p>React, Vue.js, TypeScript, and CSS to build responsive interfaces.</p>
+          </div>
+          <div className="service-card">
+            <FaServer className="service-icon" />
+            <h3>Backend Development</h3>
+            <p>Node.js, PHP, and database design to create scalable server-side solutions.</p>
+          </div>
+          <div className="service-card">
+            <FaMobileAlt className="service-icon" />
+            <h3>Mobile Development</h3>
+            <p>React Native and progressive web apps for cross-platform mobile experiences.</p>
+          </div>
         </div>
-      </Section>
-    </Layout>
+      </div>
+    </section>
   );
 };
 

@@ -1,23 +1,26 @@
 import React from "react";
-import Layout from "../components/Layouts/layout";
-import Section from "../components/Layouts/section";
-import profilepic from "../assets/2025profilepic.jpeg";
-import "../pages/pages.css";
+import "./pages.css";
+import profileImage from "../assets/2025profilepic.jpeg"
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   return (
-    <Layout>
-      <Section
-        title="Luke Rudderham-Cozier"
-        subtitle="Junior Software Engineer"
-      >
-        <img
-          src={profilepic}
-          className="profile-picture"
-          alt="profile picture"
-        />
-      </Section>
-    </Layout>
+    <section id="home" className="hero-section container">
+      <div className="hero-content">
+        <h1 className="hero-heading">Hello, I'm Luke</h1>
+        <p className="hero-subheading">
+          Junior Software Engineer crafting digital experiences with clean code and
+          thoughtful design.
+        </p>
+        <div className="hero-buttons">
+          <Link to="/projects" className="btn btn-primary">View My Work</Link>
+          <Link to="/contact" className="btn btn-secondary">Get In Touch</Link>
+        </div>
+      </div>
+      <div className="hero-image-wrapper">
+        <img src={profileImage} alt="Luke Cozier" className="hero-image" />
+      </div>
+    </section>
   );
 };
 

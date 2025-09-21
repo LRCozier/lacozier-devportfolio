@@ -48,6 +48,11 @@
   text-decoration: none;
 }
 
+.nav-links a.active {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 .menu-toggle {
   display: none;
   font-size: 1.8rem;

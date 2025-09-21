@@ -1,37 +1,37 @@
-import { useEffect, useState } from "react";
-import { GraphQLClient, gql } from "graphql-request";
+import React from 'react';
+import { useQuery, gql } from '@apollo/client';
 import ProjectCard from './projectcard';
 
-const endpoint = 'https://eu-west-2.cdn.hygraph.com/content/cmao5enez00et07wfwhggtd0z/master';
-const graphQLClient = new GraphQLClient(endpoint);
-
-const query = gql`
-  {
-    project {
+const GET_PROJECTS = gql`
+  query GetProjects {
+    projects {
+      id
       title
       description
-      githubUrl
-      livedemoUrl
       techstack
+      livedemoUrl
+      githubUrl
     }
   }
 `;
 
 const ProjectList = () => {
-  const [project, setProject] = useState([]);
+  const { loading, error, data } = useQuery(GET_PROJECTS);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const data = await graphQLClient.request(query);
-      setProject(data.project);
-    };
-    fetchProjects();
-  }, []);
+  if (loading) return <p className="loading-message">Loading projects...</p>;
+  if (error) return <p className="error-message">Error: Could not load projects.</p>;
 
   return (
-    <div className="project-list">
-      {project.map((proj, index) => (
-        <ProjectCard key={index} {...proj} />
+    <div className="projects-grid">
+      {data.projects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          title={project.title}
+          description={project.description}
+          techstack={project.techstack}
+          liveUrl={project.livedemoUrl}
+          githubUrl={project.githubUrl}
+        />
       ))}
     </div>
   );
