@@ -18,7 +18,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="hero-image-wrapper">
-        <img src={profileImage} alt="Luke Cozier" className="hero-image" />
+        <img src={profileImage} alt="A portrait of Luke Cozier" className="hero-image" />
       </div>
     </section>
   );

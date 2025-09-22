@@ -14,11 +14,13 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+const basename = import.meta.env.PROD ? '/lacozier-devportfolio' : '/';
+
 const App = () => {
 
   return (
   <ApolloProvider client={client}>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <TopScroll />
       <Navbar />
       <main>

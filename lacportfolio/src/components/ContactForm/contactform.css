@@ -1,5 +1,3 @@
-/*START - CONTACT FORM*/
-
 .query-form {
   max-width: 400px;
   margin: 0 auto;
@@ -52,5 +50,3 @@
 .query-form button:hover {
   background-color: var(--accent-color);
 }
-
-/*END - CONTACT FORM*/

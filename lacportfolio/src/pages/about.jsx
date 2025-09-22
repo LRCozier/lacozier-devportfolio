@@ -1,4 +1,3 @@
-// pages/About.jsx
 import React from "react";
 import "./pages.css";
 import { FaCode, FaServer, FaMobileAlt } from 'react-icons/fa';
