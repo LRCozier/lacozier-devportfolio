@@ -8,7 +8,7 @@ const About = () => {
       <div className="container">
         <h1 className="section-heading">About Me</h1>
         <p className="section-subheading">
-          I'm a passionate full-stack developer with expertise in modern web
+          I'm a passionate Junior Software Engineer with expertise in modern web
           technologies. I love creating seamless user experiences and robust
           backend solutions.
         </p>

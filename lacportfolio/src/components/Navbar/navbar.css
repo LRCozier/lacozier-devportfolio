@@ -1,24 +1,18 @@
-:root {
-  --text-color: #333;
-  --primary-background: #f8f8f8;
-  --active-color: #BEBEBE;
-  --navbar-height: 2rem;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  height: var(--navbar-height);
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .header.scrolled {
+  background-color: rgba(24, 24, 27, 0.8);
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .navbar {
