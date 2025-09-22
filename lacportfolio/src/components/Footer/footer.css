@@ -1,5 +1,5 @@
 .footer {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   background-color: var(--background-secondary);
   border-top: 1px solid var(--border-color);
 }
@@ -10,6 +10,8 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  max-width: var(--max-content-width, 1120px);
+  margin: 0 auto;
 }
 
 .footer-info .footer-name {
@@ -41,9 +43,15 @@
   .footer-content {
       flex-direction: column;
       gap: 1.5rem;
+      justify-content: center;
   }
 
   .footer-info {
       text-align: center;
+      order: 2;
+  }
+
+  .footer-socials{
+    order: 1;
   }
 }
