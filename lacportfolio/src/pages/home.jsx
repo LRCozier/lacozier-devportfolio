@@ -9,8 +9,8 @@ const Homepage = () => {
       <div className="hero-content">
         <h1 className="hero-heading">Hello, I'm Luke</h1>
         <p className="hero-subheading">
-          Junior Software Engineer crafting digital experiences with clean code and
-          thoughtful design.
+        Front-End Software Engineer, crafting intuitive and beautiful digital experiences, 
+        backed by clean code and a passion for the entire technology stack.
         </p>
         <div className="hero-buttons">
           <Link to="/projects" className="btn btn-primary">View My Work</Link>
