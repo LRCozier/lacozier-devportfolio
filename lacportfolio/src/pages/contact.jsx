@@ -7,10 +7,11 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section page-section">
       <div className="container">
-        <h1 className="section-heading">Let's Work Together</h1>
+        <h1 className="section-heading">Ready for a Diagnostic? Let’s Talk.</h1>
         <p className="section-subheading">
-          I'm always interested in new opportunities and collaborations. Feel free
-          to reach out through your preferred channel.
+          Whether you’re struggling with a buggy legacy site, poor loading speeds, or need a high-performance build 
+          from scratch, I can help. Reach out below to discuss your project or request a free, no-obligation site 
+          health check. Let's find out how we can optimize your digital presence.
         </p>
         <div className="contact-links">
           <a href="mailto:lrcozier@gmail.com" className="contact-link-card">
