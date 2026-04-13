@@ -3,7 +3,7 @@ import "./pages.css";
 import profileImage from "../assets/2025profilepic.jpeg";
 import { Link } from "react-router-dom";
 
-const Homepage = () => {
+const Homepage: React.FC = () => {
   return (
     <main className="homepage">
       <section id="home" className="hero-section container">
@@ -26,25 +26,27 @@ const Homepage = () => {
           </div>
         </div>
         <div className="hero-image-wrapper">
-          <img src={profileImage} alt="A portrait of Luke Cozier" className="hero-image" />
+          <img src={profileImage} alt="A portrait of Luke Cozier" className="hero-image" fetchPriority="high" />
         </div>
       </section>
 
       <section id="services" className="services-section container">
-        <h3 className="section-title">What I Do</h3>
+        <header className="section-header-centered">
+            <h3 className="section-title">What I Do</h3>
+        </header>
         <div className="services-grid">
-          <div className="service-card">
+          <article className="service-card">
             <h4>🩺 Code Surgery & Optimization</h4>
             <p>I dive into existing sites to fix bugs, patch security holes, and boost loading speeds. Because a slow site is a dying site.</p>
-          </div>
-          <div className="service-card">
+          </article>
+          <article className="service-card">
             <h4>💻 Full-Stack Development</h4>
             <p>I build clean, scalable, and intuitive digital products tailored to your business goals from the ground up.</p>
-          </div>
-          <div className="service-card">
+          </article>
+          <article className="service-card">
             <h4>🌍 Remote-First Excellence</h4>
             <p>Proudly supporting local businesses in Richmond and Kingston, while delivering world-class engineering to clients across the UK.</p>
-          </div>
+          </article>
         </div>
       </section>
     </main>

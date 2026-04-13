@@ -1,52 +1,85 @@
 .query-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--background-color);
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: left;
+  background-color: var(--background-primary);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
 .query-form label {
   display: block;
-  margin-top: 10px;
+  margin-bottom: 0.5rem;
   color: var(--text-primary);
-  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .query-form input, 
 .query-form textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 5px;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
   box-sizing: border-box;
-  font-family: var(--font-primary);
-  color: var(--secondary-color);
-  background-color: #fff;
+  font-family: var(--font-family-primary);
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--background-secondary);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.query-form input::placeholder,
+.query-form textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
 }
 
 .query-form input:focus, 
 .query-form textarea:focus {
-  border-color: var(--primary-color);
+  border-color: var(--accent-color);
   outline: none;
-  box-shadow: 0 0 4px rgba(42, 157, 143, 0.5);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 20%, transparent);
 }
 
-.query-form button {
+.query-form input[aria-invalid="true"],
+.query-form textarea[aria-invalid="true"] {
+  border-color: #EF4444;
+}
+
+.query-form .form-submit {
   width: 100%;
-  padding: 10px;
-  margin-top: 15px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: var(--font-primary);
-  transition: background-color 0.3s ease;
+  margin-top: 1rem;
 }
 
-.query-form button:hover {
-  background-color: var(--accent-color);
+.error-text {
+  color: #EF4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.status-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.status-text.success {
+  background-color: color-mix(in srgb, var(--accent-color) 10%, transparent);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.status-text.error {
+  background-color: color-mix(in srgb, #EF4444 10%, transparent);
+  color: #EF4444;
+  border: 1px solid #EF4444;
 }
