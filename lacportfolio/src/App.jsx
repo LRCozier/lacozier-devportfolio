@@ -8,6 +8,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
 import TopScroll from './components/Layouts/topscroll';
+import Services from './pages/services';
 
 const client = new ApolloClient({
   uri: import.meta.env.VITE_HYGRAPH_ENDPOINT,
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

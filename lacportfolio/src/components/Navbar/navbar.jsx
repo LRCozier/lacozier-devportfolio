@@ -27,6 +27,7 @@ const Navbar = () => {
       <ul className="nav-links">
         <li><NavLink to="/about" onClick={handleLinkClick}>About</NavLink></li>
         <li><NavLink to="/projects" onClick={handleLinkClick}>Work</NavLink></li>
+        <li><NavLink to="/services" onClick={handleLinkClick}>Services</NavLink></li>
         <li><NavLink to="/contact" onClick={handleLinkClick}>Contact</NavLink></li>
       </ul>
     </div>
