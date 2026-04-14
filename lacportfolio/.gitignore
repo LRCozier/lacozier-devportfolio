@@ -25,3 +25,4 @@ dist-ssr
 
 # ... other ignored files
 .env.local
+.env
