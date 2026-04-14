@@ -1,41 +1,48 @@
-# Luke Cozier - Developer Portfolio
+<div align="center">
 
-A personal developer portfolio built with React and Vite, featuring dynamic project management through a GraphQL API and a functional contact form powered by EmailJS.
+# 🚀 Modern Web Developer Portfolio
 
----
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](#)
+[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)](#)
 
-## Live Demo
+A high-performance, type-safe React Single Page Application (SPA) built to showcase projects and services. Engineered with Vite and TypeScript, this portfolio utilizes Apollo Client to fetch dynamic content from a Hygraph headless CMS, and features a serverless contact form powered by EmailJS.
 
-**[View the live site here](https://lrcozier.github.io/lacozier-devportfolio/)** 
+**[🌐 View the Live Site Here](https://lrcozier.co.uk)**
 
----
-
-## Features
-
-- **Modern & Responsive Design:** Fully responsive layout for optimal viewing on all devices, from mobile phones to desktops.
-- **Dynamic Project Showcase:** Projects are fetched dynamically from a Hygraph Headless CMS via a GraphQL API.
-- **Interactive Contact Form:** A client-side contact form with validation and direct-to-email functionality using EmailJS.
-- **Clean Navigation:** Smooth, single-page feel with client-side routing handled by React Router.
-- **Optimized for Deployment:** Configured for easy deployment to GitHub Pages.
+</div>
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-### Frontend
-- **Framework:** [React](https://react.dev/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **Routing:** [React Router](https://reactrouter.com/)
-- **Styling:** CSS3 with CSS Variables
-- **Icons:** [React Icons](https://react-icons.github.io/react-icons/) & [Font Awesome](https://fontawesome.com/)
-
-### Data
-- **API:** [GraphQL](https://graphql.org/)
-- **Client:** [Apollo Client](https://www.apollographql.com/docs/react/)
-- **Headless CMS:** [Hygraph](https://hygraph.com/) (formerly GraphCMS)
-
-### Deployment
-- **Platform:** [GitHub Pages](https://pages.github.com/)
-- **Tool:** [gh-pages](https://www.npmjs.com/package/gh-pages)
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Frontend** | React 18 & Vite | Lightning-fast build tool with modern React rendering. |
+| **Language** | TypeScript | Strict typing for robust, error-free component logic. |
+| **Data Layer** | Apollo Client | Efficient GraphQL state management and fetching. |
+| **Backend / CMS** | Hygraph | High-performance Content API for dynamic projects. |
+| **Infrastructure** | EmailJS | Serverless architecture for direct-to-inbox messaging. |
+| **Hosting** | GitHub Pages | Deployed via the `gh-pages` automated package. |
 
 ---
+
+## ✨ Key Features
+
+* **🛡️ Type-Safe Architecture:** Fully migrated to TypeScript for robust, predictable, and error-free component rendering.
+* **⚡ Dynamic Content:** Projects are fetched in real-time from a Hygraph GraphQL endpoint, allowing for CMS-driven content updates without ever needing to redeploy the codebase.
+* **📬 Serverless Contact Form:** Direct-to-inbox messaging using EmailJS, completely bypassing the need for a traditional backend server.
+* **🗺️ SPA Routing Optimization:** Custom configurations ensure React Router works flawlessly on GitHub Pages, without triggering 404 errors on page refreshes or direct URL visits.
+
+---
+
+## 💻 Local Development Setup
+
+To run this project locally, ensure you have **Node.js** installed on your machine.
+
+### 1. Clone & Install
+```bash
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+cd your-repo-name
+npm install
