@@ -15,7 +15,7 @@ const Services: React.FC = () => {
             Technology should never be the bottleneck in your business. Whether you need to rescue a failing legacy system or build a high-speed platform from scratch, I provide focused, comprehensive web solutions designed for stability and growth.
           </p>
           <p className="page-description highlight">
-            <strong>I specialize in two core areas:</strong>
+            <strong>I specialise in two core areas:</strong>
           </p>
         </div>
       </section>

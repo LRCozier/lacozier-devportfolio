@@ -10,7 +10,7 @@ const About: React.FC = () => {
           <h1 className="section-heading">About Me: Engineering Better Business Outcomes</h1>
           <p className="section-subheading">
           I am a Software Engineer who believes your digital presence should be your most reliable asset. 
-          I don't just write code; I diagnose problems, optimize performance, and engineer solutions that 
+          I don't just write code; I diagnose problems, optimise performance, and engineer solutions that 
           drive business growth. From smooth user interfaces to rock-solid servers, I bring a detail-oriented, 
           full-stack perspective to every project, ensuring your technology works as hard as you do.
           </p>
@@ -20,7 +20,7 @@ const About: React.FC = () => {
           <article className="service-card">
             <FaCode className="service-icon" aria-hidden="true" />
             <h3>The Interface: Front-End Development</h3>
-            <p>First impressions dictate whether a customer stays or leaves. I specialize in turning complex, 
+            <p>First impressions dictate whether a customer stays or leaves. I specialise in turning complex, 
               frustrating bottlenecks into beautiful, intuitive user experiences. Using modern JavaScript frameworks 
               like React, Vue.js, and Next.js, I build fast, responsive, and highly accessible front-ends. My goal 
               is simple: keep your users engaged, keep your bounce rates low, and deliver pixel-perfect performance 
