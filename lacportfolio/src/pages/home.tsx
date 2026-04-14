@@ -15,7 +15,7 @@ const Homepage: React.FC = () => {
             High-Performance Digital Solutions from Richmond Upon Thames to the rest of the UK.
           </h2>
           <p className="hero-description">
-            Hello, I’m <strong>Luke</strong>. I’m a Software Engineer specializing in resuscitating sluggish websites and building robust digital experiences from the ground up.
+            Hello, I’m <strong>Luke</strong>. I’m a Software Engineer specialising in resuscitating sluggish websites and building robust digital experiences from the ground up.
           </p>
           <p className="hero-description">
             Whether your current site has "broken code" that needs surgery or you're looking to launch a high-speed platform that converts visitors into customers, I provide the technical diagnosis and treatment your business needs to thrive online.
